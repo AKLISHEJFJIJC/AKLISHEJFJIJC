@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+  
+   
+  body {
+      margin: 0;
+      padding: 0;
+      /* background-color: rgb(231, 224, 224); */
+      background-color: rgb(204, 211, 208);
+      
+    }
+
+    h1 {
+      margin-top: 0%;
+      text-align: center;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-shadow: rgb(51, 47, 49);
+      border-bottom: 2px solid rgb(177, 164, 164);
+      background-color: rgb(182, 175, 175);
+      margin-bottom: 30px;
+      
+      padding: 10px;
+    }
+
+    form {
+      width: 500px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+      max-height:50%;
+      background-color: rgb(233, 240, 241);
+
+     margin-left: 30%;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid rgba(92, 127, 141, 0.425);
+      border-radius: 5px;
+      padding: 10px;
+      border-width: 10px;
+      width: 90%;
+    }
+    input
+     select 
+    {
+      background-color: rgb(230, 221, 221);
+        height: 20%;
+      border-radius: 3%;
+      color: black;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+     
+      
+      
+}
+legend {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #859186;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      width: 100%;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+    label {
+     margin-bottom: 8px;
+      color: rgb(31, 29, 29);
+      padding: 20px;
+      font-weight: bold;
+    }
+  
+</style>
+</head>
+<body>
+  <header>
+    <h1>Registration Form</h1>
+  </header>
+     <!-- form -->
+  <form action="">
+    <fieldset>
+    <legend>Personal information:</legend>
+    
+    <label for="fname" style="font-weight: bold; " >First name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Enter your fname"><br><br>
+
+    <label for="lname"style="font-weight: bold;">last name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="Enter your lname"><br><br>
+
+    <label for="email"style="font-weight: bold;">Email:</label><br>
+      <input type="email" id="email" name="email" required placeholder="Enter you email"><br><br>
+
+      <label for="password"style="font-weight: bold;">password</label><br>
+      <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+
+      <label for="confirm-password"style="font-weight: bold;">confirm-password</label><br>
+      <input type="confirm-password" id="confirm-password" name="confirm-password" required placeholder="confirm-password"><br><br>
+    
+
+      <label>Select Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><tr>
+
+      <input type="radio" id="female" name="gender" value="male" required>
+      <label for="female">female</label>
+
+      <input type="radio" id="other" name="other" value="other" required>
+      <label for="other">other</label>
+
+      <br>
+
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age" value="age" required placeholder="Enter your age"><br>
+         <!-- selecting years -->
+         <br>
+
+         <label for="year">Select year</label>
+         <select id="year" name="year" required>
+          <option value="firstyear">firstyear</option>
+          <option value="2ndyear">2ndyear</option>
+          <option value="3rdyear">3rdyear</option>
+          <option value="4rthyear">4rthyear</option>
+         </select><br>
+           <h2>Select Elective subject:-</h2>
+
+           <input type="checkbox" id="ai" name="Artificial Intelligence" value="Artificial Intelligence">
+           <label for="Artificial Intelligence"> Artificial Intelligence</label><br>
+
+           <input type="checkbox" id="dm" name="Data Mining" value="dm">
+              <label for="dm">Data Mining</label><br>
+
+              <input type="checkbox" id="Computer Vision" name="Computer Vision" value="Computer Vision">
+              <label for="Computer vision">Computer vision</label><br>
+                    <!-- address -->
+         <br>
+              <label for="address" >Enter Your Address:</label><br>
+              <textarea style="width:40%" id="address" name="address" rows="6" required placeholder="Enter your address here..." ></textarea>
+
+              <br>
+               <label for="file">choose File</label>
+               <input type="file" id="file" name="file">
+
+               <br><br>
+                    <!-- buttons -->
+               <input type="submit" value="Submit">
+               <br><br>
+               <input type="reset" value="Reset">
+
+</fieldset>
+
+ </form>
+
+ 
+
+
+
+
+      
+     
+
+      
+
+   
+
+</body>
+</html>
